@@ -43,7 +43,6 @@ module.exports = ctx => ({
         lastUpdated: 'Last Updated',
         nav: require('./nav/en'),
         sidebar: {
-          '/api/': getApiSidebar(),
           '/guide/': getGuideSidebar('Guide', 'API Reference','Advanced'),
         }
       },
@@ -54,7 +53,6 @@ module.exports = ctx => ({
         lastUpdated: '上次更新',
         nav: require('./nav/zh'),
         sidebar: {
-          '/zh/api/': getApiSidebar(),
           '/zh/guide/': getGuideSidebar('指南', '深入'),
         }
       }
@@ -86,13 +84,6 @@ module.exports = ctx => ({
     '.vuepress/nav/zh.js',
   ]
 })
-
-function getApiSidebar () {
-  return [
-    'cli',
-    'node'
-  ]
-}
 
 function getGuideSidebar (groupA, groupB, groupC) {
   return [
