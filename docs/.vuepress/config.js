@@ -1,18 +1,19 @@
 const { fs, path } = require('@vuepress/shared-utils')
 
 module.exports = ctx => ({
-  dest: '../../vuepress',
+  dest: 'docs/dist',
+  
   locales: {
     '/': {
       lang: 'en-US',
       title: 'MetaMask Developer Documentation',
       description: 'Welcome'
-    },
-    '/zh/': {
-      lang: 'zh-CN',
-      title: 'MetaMask Developer Documentation',
-      description: 'Vue 驱动的静态网站生成器'
     }
+    // '/zh/': {
+    //   lang: 'zh-CN',
+    //   title: 'MetaMask Developer Documentation',
+    //   description: 'Vue 驱动的静态网站生成器'
+    // }
   },
   head: [
     ['link', { rel: 'icon', href: `/logo.png` }],
@@ -45,17 +46,18 @@ module.exports = ctx => ({
         sidebar: {
           '/guide/': getGuideSidebar('Guide', 'API Reference','Advanced'),
         }
-      },
-      '/zh/': {
-        label: '简体中文',
-        selectText: '选择语言',
-        editLinkText: '在 GitHub 上编辑此页',
-        lastUpdated: '上次更新',
-        nav: require('./nav/zh'),
-        sidebar: {
-          '/zh/guide/': getGuideSidebar('指南', '深入'),
-        }
       }
+      // '/zh/': {
+      //   label: '简体中文',
+      //   selectText: '选择语言',
+      //   editLinkText: '在 GitHub 上编辑此页',
+      //   lastUpdated: '上次更新',
+      //   nav: require('./nav/zh'),
+      //   sidebar: {
+      //     '/zh/api/': getApiSidebar(),
+      //     '/zh/guide/': getGuideSidebar('指南', '深入','深入'),
+      //   }
+      // }
     }
   },
   plugins: [
@@ -81,7 +83,7 @@ module.exports = ctx => ({
   ],
   extraWatchFiles: [
     '.vuepress/nav/en.js',
-    '.vuepress/nav/zh.js',
+    // '.vuepress/nav/zh.js',
   ]
 })
 
@@ -113,10 +115,9 @@ function getGuideSidebar (groupA, groupB, groupC) {
       title: groupC,
       collapsable: false,
       children: [
-        'frontmatter',
-        'permalinks',
-        'markdown-slot',
-        'global-computed'
+        'registering-function-names',
+        'registering-your-token',
+        'defining-your-icon',
       ]
     }
   ]
