@@ -44,7 +44,7 @@ module.exports = ctx => ({
         lastUpdated: 'Last Updated',
         nav: require('./nav/en'),
         sidebar: {
-          '/guide/': getGuideSidebar('Guide', 'API Reference','Best Practices'),
+          '/guide/': getGuideSidebar('MetaMask Updates','Guide', 'API Reference','Best Practices'),
         }
       }
       // '/zh/': {
@@ -87,13 +87,19 @@ module.exports = ctx => ({
   ]
 })
 
-function getGuideSidebar (groupA, groupB, groupC) {
+function getGuideSidebar (groupA, groupB, groupC, groupD) {
   return [
     {
       title: groupA,
       collapsable: false,
       children: [
-        '',
+        'release-notes',
+      ]
+    },
+    {
+      title: groupB,
+      collapsable: false,
+      children: [
         'getting-started',
         'common-terms',
         'initializing-dapps',
@@ -102,7 +108,7 @@ function getGuideSidebar (groupA, groupB, groupC) {
       ]
     },
     {
-      title: groupB,
+      title: groupC,
       collapsable: false,
       children: [
         'ethereum-provider',
@@ -112,7 +118,7 @@ function getGuideSidebar (groupA, groupB, groupC) {
       ]
     },
     {
-      title: groupC,
+      title: groupD,
       collapsable: false,
       children: [
         'registering-function-names',
