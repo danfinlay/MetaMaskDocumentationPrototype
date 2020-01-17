@@ -6,6 +6,10 @@ actionLink: /guide/getting-started
 footer: MIT Licensed | Austin Akers
 ---
 
+::: warning IMPORTANT NOTE
+Breaking Changes to take full effect <strong>Q1 2020</strong>. Please rereference our [Release Notes](/guide/release-notes) page.
+:::
+
 <div class="features">
   <div class="feature">
     <h2>Account Management</h2>
