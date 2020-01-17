@@ -4,7 +4,7 @@ User accounts are used in a variety of contexts in Ethereum, they serve as neat 
 * `eth_sign` (insecure and unadvised to use)
 * `eth_personalSign`
 * `eth_signTypedData`
-Once you’ve [connected to a user](/guide/getting-started.html), you can always re-check the current account by checking `ethereum.selectedAddress`.
+Once you’ve [connected to a user](/guide/getting-started.html), you can always re-check the current account by checking `ethereum.selectedAddress` [Deprecated].
 
 If you’d like to be notified when the address changes, we have an event you can subscribe to:
 ``` javascript

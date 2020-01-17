@@ -37,7 +37,7 @@ Returns a numeric string representing the current blockchain’s network ID. A f
 * ‘4’: Rinkeby Test Network 
 * ‘42’: Kovan Test Network
 
-### ethereum.selectedAddress 
+### ethereum.selectedAddress [Deprecated]
 Returns a hex-prefixed string representing the current user’s selected address, ex: `"0xfdea65c8e26263f6d9a1b5de9555d2931a33b825"`.
 
 ### ethereum.isMetaMask
@@ -106,7 +106,7 @@ ethereum.send({
 })
 ```
 
-### ethereum.sendAsync(options, callback)
+### ethereum.sendAsync(options, callback) [Deprecated]
 
 ::: warning IMPORTANT NOTE
 To be superceded by the promise-returning send() method in [EIP 1193](https://github.com/ethereum/EIPs/blob/master/EIPS/eip-1193.md).
