@@ -161,7 +161,17 @@ New Ethereum RPC methods and changes to existing methods MUST be proposed via th
 | [eth_uninstallFilter](/guide/json-rpc-api.html#eth-uninstallfilter)   | Destroys a filter based on filter ID |
 
 ### web3_clientVersion
-  <!-- content goes here -->
+<details>
+<summary>Returns the version of the current client</summary>
+<ul>
+<li> markdown list 1</li>
+<ul>
+<li> nested list 1</li>
+<li> nested list 2</li>
+</ul>
+<li> markdown list 2</li>
+</ul>
+</details>
 
 ### web3_sha3
   <!-- content goes here -->
